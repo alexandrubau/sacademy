@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inregistrare - Superheroes Academy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="header-small">
+</header>
+<div class="container">
+    <div id="header-text">
+        <h1>SUPERHEROES ACADEMY</h1>
+        <h5><span>echipa de supereroi, in pregatire</span></h5>
+    </div>
+
+
+    <div class="rules-container intro-text">
+        Inainte de a incepe aventura Superheroes Academy, trebuie sa strangem cateva informatii despre echipa pentru a
+        va intelege super puterile ceva mai bine.
+    </div>
+
+    <h4>Informatii echipa</h4>
+    <div class="box">
+        <div class="box-body">
+            <div id="step-0">
+                <form id="register-form" method="post">
+                    <div class="members col-md-12">
+                        <div class="input-group">
+                            <input type="text" class="step-0" name="team-name" placeholder="Numele echipei">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="members col-md-6">
+                            <label><b>Primul membru: *</b></label>
+                            <div class="input-group">
+                                <input type="text" class="step-0 first-member" name="first-name"
+                                       placeholder="Nume *">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="step-0 first-member" name="first-email"
+                                       placeholder="Adresa de email *">
+                            </div>
+                        </div>
+
+                        <div class="members col-md-6">
+                            <label><b>Al doilea membru:</b></label>
+                            <div class="input-group">
+                                <input type="text" class="step-0 second-member" name="second-name"
+                                       placeholder="Nume">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="step-0 second-member" name="second-email"
+                                       placeholder="Adresa de email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="members col-md-6">
+                            <label><b>Al treilea membru:</b></label>
+                            <div class="input-group">
+                                <input type="text" class="step-0 third-member" name="third-name"
+                                       placeholder="Nume">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="step-0 third-member" name="third-email"
+                                       placeholder="Adresa de email">
+                            </div>
+                        </div>
+
+                        <div class="members col-md-6">
+                            <label><b>Al patrulea membru:</b></label>
+                            <div class="input-group">
+                                <input type="text" class="step-0 fourth-member" name="fourth-name"
+                                       placeholder="Nume">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="step-0 fourth-member" name="fourth-email"
+                                       placeholder="Adresa de email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <input class="btn-orange" type="submit" value="INCEPE AVENTURA">
+                    </div>
+                    <br>
+
+                    <div class="col-md-12 text-center">
+                        * campuri obligatorii
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    Created by <b>Treasure IT</b>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.92.0.min.js"></script>
+<script src="public/team.js"></script>
+</body>
+</html>

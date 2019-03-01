@@ -9,12 +9,33 @@ $(document).ready(function(){
         window.location.href = 'quests.html';
     }
 
-    $('#register-form').on('submit', function(event){
+    $('#register-form').on('submit', function(e){
 
-        event.preventDefault();
+        e.preventDefault();
 
-        Cookies.set('start', true, { expires: 999 });
+        // Validations.
+        if(teamValidations()) {
+            Cookies.set('start', true, { expires: 999 });
+            window.location.href = 'quests/1_7699.html';
 
-        window.location.href = 'quests/1_7699.html';
+            // TODO: send to Google Spreadsheets
+        }
+
     });
+
+    function teamValidations() {
+        if(!$('#team-name').val()) {
+            $('.team-name-text').text("Numele echipei este obligatoriu.");
+
+            return false;
+        }
+
+        if (!$('.first-member-name').val() || !$('.first-member-email').val()) {
+            $('.first-member-text').text("Datele primului membru sunt obligatorii.");
+
+            return false;
+        }
+
+        return true;
+    }
 });

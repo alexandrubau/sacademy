@@ -31,20 +31,22 @@
                 <form id="register-form" method="post">
                     <div class="members col-md-12">
                         <div class="input-group">
-                            <input type="text" class="step-0" name="team-name" placeholder="Numele echipei">
+                            <input type="text" class="step-0" id="team-name" name="team-name" placeholder="Numele echipei">
+                            <p class="team-name-text" style="color: red; font-weight: bold;"></p>
                         </div>
                     </div>
                     <div class="clearfix">
                         <div class="members col-md-6">
                             <label><b>Primul membru: *</b></label>
                             <div class="input-group">
-                                <input type="text" class="step-0 first-member" name="first-name"
+                                <input type="text" class="step-0 first-member-name" name="first-name"
                                        placeholder="Nume *">
                             </div>
                             <div class="input-group">
-                                <input type="email" class="step-0 first-member" name="first-email"
+                                <input type="email" class="step-0 first-member-email" name="first-email"
                                        placeholder="Adresa de email *">
                             </div>
+                            <p class="first-member-text" style="color: red; font-weight: bold;"></p>
                         </div>
 
                         <div class="members col-md-6">

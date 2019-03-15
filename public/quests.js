@@ -89,7 +89,7 @@ $(document).ready(function(){
 
     $('#quest-7-submit').on('click', function(){
 
-        if ($('#quest-7-field').val() === '463') {
+        if ($('#quest-7-field').val() === '231') {
 
             Cookies.set('quest-8', true, { expires: 999 });
 
